@@ -259,7 +259,7 @@ p {
     font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
+    letter-spacing: 0.03em;
 
     margin: 0px;
 
@@ -316,7 +316,7 @@ h5 {
 
 }
 
-.small {
+/* .small {
     font-family: 'Helvetica Now Display';
     font-size: 0.9 rem;
     font-weight: 400;
@@ -325,7 +325,7 @@ h5 {
     text-align: left;
     margin: 0px;
 
-}
+} */
 
 .xtra-small {
     font-family: 'Helvetica Now Display';
@@ -489,9 +489,5 @@ h5 {
         line-height: 10px;
         letter-spacing: 0em;
         margin: 0px;
-        background-color: aqua;
-    }
+     }
 } */
-
-
-/* Tablet  */

@@ -1,0 +1,162 @@
+:root {
+    --putih: #D6D5DB;
+    --hitam: #050406;
+    --hitam75: #444344;
+    --hitam50: #828183;
+    --hitam25: #C1C0C1;
+    --bg: #CDCDCD;
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* Nav */
+    nav .my-logo {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    /* End Nav */
+
+    /* Hero */
+    .hero1 .container {
+        background-position: center bottom;
+        background-size: 90vh;
+        padding-left: 6vw;
+    }
+
+
+    .hero1 .content {
+        justify-content: space-between;
+        height: 100vh;
+
+    }
+
+    /* End Hero */
+
+
+    /* About */
+
+    .about .container {
+        grid-template-columns: 100%;
+    }
+
+    /* End About */
+
+    section {
+        background-color: var(--putih);
+        cursor: pointer;
+        color: var(--hitam);
+        margin: 4vh 1vw;
+    }
+
+    /* Service */
+    .service .container {
+        grid-template-columns: 100%;
+    }
+
+    .service .konten {
+        grid-template-columns: 100%;
+    }
+
+    /* End Service */
+
+
+    /* Tools */
+    .tools .container {
+        grid-template-columns: 100%;
+    }
+
+    .tools .konten {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 1vh;
+    }
+
+    .tools .card {
+        height: 135px;
+    }
+
+    /* End Tools */
+
+
+    /* Message */
+    .message .container {
+        grid-template-columns: 100%;
+    }
+
+    .message .tittle {
+        grid-template-columns: 100%;
+    }
+
+    .input,
+    textarea {
+        width: 80vw;
+    }
+
+    /* End Message */
+
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* Hero */
+
+    .hero1 .container {
+        background-position: left 20vw bottom;
+    }
+
+
+    .hero1 .subheading {
+        margin: 6px auto;
+    }
+
+
+
+    /* End Hero */
+
+
+
+
+
+
+
+
+    /* Tentang Saya */
+
+    .about {
+        width: 94%;
+    }
+
+    .vector-toggle-a,
+    .vector-toggle-b {
+        position: absolute;
+        height: 2px;
+        width: 16px;
+        background-color: var(--terang);
+    }
+
+    /* End Tentang Saya */
+
+
+    /* Services */
+    .service {
+        width: 94%;
+    }
+
+    /* End Services */
+
+    /* Tools */
+    .tools {
+        width: 94%;
+    }
+
+    /* End Tools */
+
+
+    /* Message */
+
+    /* End Message */
+}

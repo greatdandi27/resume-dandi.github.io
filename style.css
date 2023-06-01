@@ -242,10 +242,10 @@ nav .logo-nav .bintang {
 }
 
 .hero1 .content {
-    /*     gap: 120px; */
+    gap: 120px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .hero1 .heading {

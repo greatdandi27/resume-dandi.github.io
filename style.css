@@ -1,11 +1,11 @@
 :root {
     --putih: #D6D5DB;
+    --putih2: #D9D9D905;
     --putih5: #D9D9D90D;
     --putih15: #D9D9D926;
     --putih50: #D9D9D980;
     --putih75: #D9D9D9BF;
     --hitam: #0E0E0E;
-    --dasar: #0c0c0c;
     --hitam75: #444344;
     --hitam50: #828183;
     --hitam25: #C1C0C1;
@@ -15,6 +15,11 @@
     scroll-snap-type: y mandatory;
 
 } */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
 
 section {
@@ -40,16 +45,18 @@ section {
 
 
 /* GENERAL */
+
+
 button {
-    background-color: transparent;
+    background-color: var(--putih2);
     width: fit-content;
-    padding: 12px 20px;
-    gap: 20px;
+    padding: 10px 20px;
+    gap: 8px;
     border-radius: 100px;
-    border: solid 1px var(--putih);
+    border: solid 1px var(--putih15);
     display: flex;
     align-items: center;
-    color: var(--putih);
+    color: var(--putih50);
     transition: ease 1s;
 }
 
@@ -81,11 +88,26 @@ button:hover img {
     background-color: var(--putih5);
 }
 
+a {
+    text-decoration: none;
+    color: var(--putih);
+}
+
+.cta-hero {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-hero img {
+    margin: 20px;
+    height: 20px;
+}
 
 /* END GENERAL */
 
 body {
-    background-color: var(--dasar);
+    background-color: var(--hitam);
     margin: 0 auto;
     overflow-x: hidden;
     position: 0px
@@ -185,7 +207,7 @@ body {
     position: fixed;
     width: 100%;
     margin: 0 auto;
-    background-color: var(--putih5);
+    background-color: #0c0c0c63;
     backdrop-filter: blur(10px);
     margin: -28px auto;
 }
@@ -211,7 +233,7 @@ body {
 nav .my-logo {
     font-family: 'Helvetica Now Display';
     font-size: 21px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 16px;
     letter-spacing: -0.02em;
     color: var(--putih);
@@ -226,32 +248,49 @@ nav .logo-nav .bintang {
 
 
 /* Hero */
+
+/* .blurr1 {
+    height: 550px;
+    width: 150px;
+    background-color: red;
+    position: absolute;
+    z-index: 50;
+    bottom: 0;
+
+} */
+
 .hero1 {
-    color: var(--putih);
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     height: calc(100vh + 18px);
-    display: flex;
-    justify-content: center;
+    background-image: url(asset/img/bg\ overlay\ dust.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.25s ease-out;
 }
 
+
 .hero1 .container {
-    background-color: #0c0c0c;
-    width: 100%;
-    background-image: url(asset/img/Foto\ 2.png);
-    background-repeat: no-repeat;
-    background-position: left 28vw bottom;
-    background-origin: content-box;
-    background-size: 120vh;
-    height: 100%;
-    margin-top: -40px;
+    color: var(--putih);
+    margin: 0 auto;
+    width: 1400px;
     display: flex;
-    align-items: center;
-    padding-left: 10vw;
+    justify-content: start;
+    height: 100%;
+}
+
+
+.foto {
+    height: 100vh;
+    right: 2%;
+    top: 5px;
+    /* bottom: 0; */
+    position: absolute;
+    display: flex;
+    transition: 0.3s ease-out;
 }
 
 .hero1 .content {
-    gap: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -262,45 +301,18 @@ nav .logo-nav .bintang {
 }
 
 .hero1 .subheading {
+    margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 16px auto;
+
 }
 
 .hero1 hr {
-    background-color: var(--putih75);
+    background-color: var(--putih);
     height: 2px;
     margin-left: 20px;
     flex-grow: 1;
-}
-
-.hero1 .cta-hero {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: 1.5s ease;
-}
-
-.cta-hero h5 {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0.5px;
-    transition: 0.5s ease;
-}
-
-.cta-hero:hover {
-    scale: 110%;
-    transition: 0.5s ease;
-}
-
-.cta-hero:hover img {
-    filter: invert(86%) sepia(23%) saturate(147%) hue-rotate(5deg) brightness(110%) contrast(95%);
-}
-
-.cta-hero:hover h5 {
-    -webkit-text-fill-color: var(--putih);
-    -webkit-text-stroke-width: 0px;
-    transition: 0.5s ease;
 }
 
 /* End Hero */
@@ -308,10 +320,9 @@ nav .logo-nav .bintang {
 
 
 /* Pembatas */
-marquee {
-    z-index: -1;
+.pembatas marquee {
     margin-top: -40px;
-    background-color: var(--hitam75);
+    background-color: var(--hitam);
     color: var(--putih);
     display: flex;
 }
@@ -330,19 +341,17 @@ marquee h5 {
 
 /* End Pembatas */
 
-section {
-    background-color: var(--hitam);
-    cursor: pointer;
-    color: var(--putih);
-    margin: 4vh 2vw;
-    display: flex;
-    border-radius: 12px;
-}
 
 /* Tentang Saya */
+.about {
+    padding: 160px 0;
+    background-color: var(--hitam);
+}
 
 .about .container {
-    margin: 8vh 4vw;
+    margin: 0 auto;
+    color: var(--putih);
+    max-width: 1400px;
     display: grid;
     grid-template-columns: 20% auto;
     grid-column-gap: 14%;
@@ -355,6 +364,10 @@ section {
 
 .about .text {
     margin: 20px 0;
+}
+
+.about hr {
+    background-color: var(--putih50);
 }
 
 .panel {
@@ -423,53 +436,64 @@ hr {
 
 /* Services */
 
-.service .container {
-    margin: 8vh 4vw;
-    display: grid;
-    grid-template-columns: 20% auto;
-    grid-column-gap: 14%;
-    grid-row-gap: 40px;
-
+.service {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
 }
 
+.service .tittle {
+    display: flex;
+    align-items: center;
+}
+
+.service .tittle hr {
+    flex-grow: 1;
+    margin-left: 20px;
+    background-color: var(--putih);
+}
+
+.service .container {
+    color: var(--putih);
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.card-service img {
+    max-height: 40px;
+}
+
+
+
 .service .konten {
-    grid-row: span 5;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
+    grid-auto-flow: column;
+    gap: 28px;
+    margin: 80px auto;
 }
 
 .card-service {
-    padding: 22px;
-    border: 0.5px;
+    padding: 40px 26px;
     border-radius: 16px;
-    background-color: var(--putih5);
+    border: 1.5px var(--putih5) solid;
+    background-color: var(--putih2);
 }
 
 .card-service hr {
     background-color: var(--putih75);
+    margin: 20px auto;
 }
 
-.card-service .heading-card-service {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+.card-service .heading-card-service img {
+    margin-bottom: 12px;
 }
 
-.heading-card-service h1 {
-    width: 60%;
+
+.service button {
+    margin: 40px auto;
 }
 
-.card-service .small {
-    font-family: 'Helvetica Now Display';
-    font-size: 5.9 rem;
-    font-weight: 400;
-    line-height: 1re;
-    letter-spacing: 0.01em;
-    text-align: left;
-    margin: 0px;
-}
 
 /* End Services */
 
@@ -480,13 +504,23 @@ hr {
 
 
 /* Tools */
+.tools {
+    display: flex;
+    justify-content: center;
+    margin: 80px auto;
+    color: var(--putih);
+}
+
+
 
 .tools .container {
+    max-width: 1400px;
     margin: 8vh 4vw;
     display: grid;
     grid-template-columns: 20% auto;
     grid-column-gap: 14%;
     grid-row-gap: 40px;
+
 }
 
 .tools .konten {
@@ -495,34 +529,80 @@ hr {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 1vw;
     row-gap: 2vh;
-
 }
 
-.tools .card {
+.tools .konten .card {
     height: 200px;
-    border: 1px solid var(--hitam75);
-    border-radius: 12px;
+    background-color: var(--putih2);
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
+    padding-top: 24px;
 
 }
 
-
-.tools .card .logo-app {
-    margin: 18px 8px;
+.tools .iklan-baris {
+    margin: 120px auto;
 }
 
-.logo-app img {
-    width: 30%;
+.card hr {
+    height: 1px;
+    background-color: var(--putih15);
 }
 
-.tools .card .txt-app {
-    text-align: center;
-    margin: 12px 8px;
+.card .xtra-small {
+    color: var(--putih50);
+}
+
+
+.tools button {
+    margin: 40px 0;
+}
+
+.tools h4 {
+    display: flex;
+    /* background-color: rebeccapurple; */
+
+}
+
+.tools h4 hr {
+    margin-left: 20px;
+    flex-grow: 1;
+    background-color: var(--putih);
 }
 
 /* End Tools */
+
+
+
+/* Portfolio */
+.portfolio {
+    background-color: var(--putih);
+    padding: 160px;
+}
+
+.portfolio .container {
+    max-width: 1400px;
+
+}
+
+.portfolio .konten {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto auto;
+    row-gap: 40px;
+    column-gap: 40px;
+    margin: 60px auto;
+}
+
+.portfolio .card img {
+    border-radius: 8px;
+    margin: 12px auto;
+}
+
+/* End Portfolio */
 
 
 
@@ -592,3 +672,8 @@ textarea::placeholder {
 }
 
 /* END MESSAGE */
+
+
+hr {
+    background-color: var(--putih5);
+}

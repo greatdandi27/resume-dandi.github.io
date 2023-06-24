@@ -16,11 +16,19 @@
     <link rel="stylesheet" href="tombol-menu.css">
     <link rel="stylesheet" href="media-smarrtphone.css">
 
+    <!-- cdn React Js -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
     <!-- data AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- font -->
     <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">.
+
+
+    <!-- <script src="canvas3d.js"></script> -->
 </head>
 
 <body>
@@ -38,6 +46,84 @@
         </div>
 
     </main> -->
+
+
+
+
+
+
+
+    <!-- Menu Halaman -->
+    <div class="menu-halaman">
+        <ul class="navigasi">
+
+            <li class="container-menu-halaman line-halaman">
+                <a href="#hero1">
+                    <span class="garet-a">0</span>
+                    <span class="garet-b">1</span>
+                </a>
+                <div class="titik"></div>
+                <hr>
+            </li>
+
+            <li class="container-menu-halaman">
+                <a href="#about">
+                    <span class="garet-a">0</span>
+                    <span class="garet-b">2</span>
+                </a>
+                <div class="titik"></div>
+                <hr>
+            </li>
+            <li class="container-menu-halaman">
+                <a href="#service">
+                    <span class="garet-a">0</span>
+                    <span class="garet-b">3</span>
+                </a>
+                <div class="titik"></div>
+                <hr>
+            </li>
+            <li class="container-menu-halaman">
+                <a href="#tools">
+                    <span class="garet-a">0</span>
+                    <span class="garet-b">4</span>
+                </a>
+                <div class="titik"></div>
+                <hr>
+            </li>
+            <li class="container-menu-halaman">
+                <a href="#tools">
+                    <span class="garet-a">0</span>
+                    <span class="garet-b">5</span>
+                </a>
+                <div class="titik"></div>
+                <hr>
+            </li>
+            <li class="container-menu-halaman">
+                <a href="#tools">
+                    <span class="garet-a">0</span>
+                    <span class="garet-b">6</span>
+                </a>
+                <div class="titik"></div>
+                <hr>
+            </li>
+        </ul>
+        <!--       <ul class="navigasi-list">
+            <hr>
+            <hr>
+            <hr>
+            <hr> -->
+        </ul>
+    </div>
+    <!-- End Menu Halaman -->
+
+
+    <!-- Menu Kiri -->
+    <div class="menu-kiri">
+        <img src="asset/icon/Hamburger.svg" alt="">
+    </div>
+
+    <!-- End Menu Kiri -->
+
 
 
 
@@ -104,84 +190,57 @@
 
 
 
-
-    <!-- Hero -->
-    <section class="hero1">
+    <!-- myHero -->
+    <section class="hero1" id="hero1">
         <div class="container">
             <div class="content">
                 <div class="heading">
                     <div class="subheading">
-                        <h4>Hallo, I’m</h4>
+                        <h3>Hallo, I’m</h3>
                         <hr>
                     </div>
                     <h6> Dandi Irawan <br> Pamungkas.
                     </h6>
                 </div>
                 <a class="cta-hero" href="#about">
-                    <h2>Scroll Down</h2><img src="asset/icon/icon-scroll.svg" alt="">
+                    Scroll Down
+                    <div class="panah">
+                        <img src="asset/icon/icon-scroll.svg" alt="">
+                    </div>
                 </a>
             </div>
         </div>
-        <div class="blurr">
-            <div class="blurr1"></div>
-            <div class="blurr2"></div>
-            <div class="blurr3"></div>
-            <div class="blurr4"></div>
-
-        </div>
         <div class="foto"><img src="asset/img/Foto 2.png" alt=""></div>
-
+        <div class="bg-hero1">
+            <div class="blur1"></div>
+            <div class="blur2"></div>
+        </div>
 
     </section>
     <!-- end Hero -->
 
-    <!-- Pembatas -->
 
-    <div class="pembatas">
-        <marquee behavior="" direction="center" scrollamount="13">
-            <div class="text-berjalan">
-                <h5>Welcome</h5>
-                <img src="asset/icon/Bintang Tebal.svg" alt="">
-                <h5>Explore Me</h5>
-                <img src="asset/icon/Bintang Tebal.svg" alt="">
-                <h5>Dandi Irawan Pamungkas ©</h5>
-                <img src="asset/icon/Bintang Tebal.svg" alt="">
-                <h5>Little People Big Dream</h5>
-                <img src="asset/icon/Bintang Tebal.svg" alt="">
-                <h5>Welcome</h5>
-                <img src="asset/icon/Bintang Tebal.svg" alt="">
-                <h5>Explore Me</h5>
-                <img src="asset/icon/Bintang Tebal.svg" alt="">
-                <h5>Dandi Irawan Pamungkas ©</h5>
-                <img src="asset/icon/Bintang Tebal.svg" alt="">
-                <h5>Little People Big Dream</h5>
-                <img src="asset/icon/Bintang Tebal.svg" alt="">
-                <h5>Welcome</h5>
-                <img src="asset/icon/Bintang Tebal.svg" alt="">
-                <h5>Explore Me</h5>
-                <img src="asset/icon/Bintang Tebal.svg" alt="">
-                <h5>Dandi Irawan Pamungkas ©</h5>
-                <img src="asset/icon/Bintang Tebal.svg" alt="">
-                <h5>Little People Big Dream</h5>
-                <img src="asset/icon/Bintang Tebal.svg" alt="">
-
-            </div>
-        </marquee>
-    </div>
-    <!-- End Pembatas -->
 
     <!-- Tentang Saya -->
     <section class="about" id="about">
+        <div class="menu-about">
+            <a>Call me Dandi</a>
+            <a>Background & Interest</a>
+            <a>Education History</a>
+            <a>Obsession</a>
+        </div>
         <div class="container">
             <div class="tittle">
-                <h4 data-aos="fade-up" data-aos-duration="1000">About Me</h4>
+                <h4>About</h4>
+                <h4>me
+                    <hr>
+                </h4>
             </div>
-            <div class="konten">
 
-                <hr data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0">
+            <div class="konten">
+                <hr>
                 <div class="text">
-                    <div class="heading-text" id="headingtext" data-aos="fade-up" data-aos-duration="1000"
-                        data-aos-delay="100">
+                    <div class="heading-text" id="headingtext">
                         <h1>Call Me Dandi</h1>
                         <div class="icon-toggle">
                             <div class="vector-toggle-a"> </div>
@@ -197,11 +256,10 @@
                         perferendis animi eligendi ipsa facere provident ipsum maxime unde ex! Iste dolorum est
                         earum similique libero debitis cum cupiditate?</p>
                 </div>
-                <hr data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50">
+                <hr>
 
                 <div class="text">
-                    <div class="heading-text" id="headingtext" data-aos="fade-up" data-aos-duration="1000"
-                        data-aos-delay="150">
+                    <div class="heading-text" id="headingtext">
                         <h1>Background & Interest</h1>
                         <div class="icon-toggle">
                             <div class="vector-toggle-a"> </div>
@@ -219,10 +277,9 @@
                         suscipit ipsa libero maiores veritatis assumenda sed, natus, sint nostrum labore recusandae
                         fugit modi provident perspiciatis quidem ut. Nulla optio veniam eveniet odit!</p>
                 </div>
-                <hr data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                <hr>
                 <div class="text">
-                    <div class="heading-text" id="headingtext" data-aos="fade-up" data-aos-duration="1000"
-                        data-aos-delay="200">
+                    <div class="heading-text" id="headingtext">
                         <h1>Education History </h1>
                         <div class="icon-toggle">
                             <div class="vector-toggle-a"> </div>
@@ -243,12 +300,10 @@
                         Voluptas consequatur nulla animi reiciendis dicta accusamus! Odio atque tenetur soluta
                         minima
                         quia.</p>
-
                 </div>
-                <hr data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150">
+                <hr>
                 <div class="text">
-                    <div class="heading-text" id="headingtext" data-aos="fade-up" data-aos-duration="1000"
-                        data-aos-delay="250">
+                    <div class="heading-text" id="headingtext">
                         <h1>Obsession </h1>
                         <div class="icon-toggle">
                             <div class="vector-toggle-a"> </div>
@@ -267,17 +322,16 @@
                         impedit expedita, autem obcaecati, aut mollitia commodi molestiae reprehenderit qui. Ipsam
                         debitis fuga tempora sit, non veniam.</p>
                 </div>
-                <hr data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <hr>
             </div>
 
         </div>
+
 
     </section>
 
     <!-- End Tentang Saya -->
 
-
-    <hr class="pisah">
 
 
     <!-- Services -->
@@ -285,52 +339,57 @@
     <section class="service" id="service">
         <div class="container">
             <div class="tittle">
-                <h4>What do I do?</h4>
-                <hr>
+                <h4>What do I Do?
+                    <hr>
+                </h4>
+
             </div>
 
             <div class="konten">
                 <div class="card-service">
-                    <div class="heading-card-service">
-                        <img src="asset/icon/advertising.svg" alt="">
-                        <h1>Digital Advertising & Soicial Media Post</h1>
-                    </div>
+                    <h1>Digital Advertising & <br> Soicial Media Post</h1>
                     <hr>
                     <p>aaa Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero inventore
                         tenetur
                         et, consectetur at deleniti facilis deserunt odio nemo dolore, </p>
-                </div>
-
-                <div class="card-service">
-                    <div class="heading-card-service">
-                        <img src="asset/icon/office pack.svg" alt="">
-                        <h1>Office pack asset digital & print</h1>
-                    </div>
-                    <hr>
-                    <p>aaa Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero inventore
-                        tenetur
-                        et, consectetur at deleniti facilis deserunt odio nemo dolore, </p>
-                </div>
-
-                <div class="card-service">
-                    <div class="heading-card-service">
-                        <img src="asset/icon/front end.svg" alt="">
-                        <h1>Frontend Web & UI/UX design</h1>
-                    </div>
-                    <hr>
-                    <p>aaa Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero inventore
-                        tenetur
-                        et, consectetur at deleniti facilis deserunt odio nemo dolore, </p>
+                    <a class="tombol-card small" href="">
+                        Read more
+                        <img src="asset/icon/panah-kecil.svg" alt="">
+                    </a>
                 </div>
                 <div class="card-service">
-                    <div class="heading-card-service">
-                        <img src="asset/icon/motion graphic.svg" alt="">
-                        <h1>Motion <br> Graphic</h1>
-                    </div>
+                    <h1>Office pack asset <br>digital
+                        & asset print</h1>
                     <hr>
                     <p>aaa Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero inventore
                         tenetur
                         et, consectetur at deleniti facilis deserunt odio nemo dolore, </p>
+                    <a class="tombol-card small" href="">
+                        Read more
+                        <img src="asset/icon/panah-kecil.svg" alt="">
+                    </a>
+                </div>
+                <div class="card-service">
+                    <h1>UI/UX Design <br> Frontend development</h1>
+                    <hr>
+                    <p>aaa Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero inventore
+                        tenetur
+                        et, consectetur at deleniti facilis deserunt odio nemo dolore, </p>
+                    <a class="tombol-card small" href="">
+                        Read more
+                        <img src="asset/icon/panah-kecil.svg" alt="">
+                    </a>
+                </div>
+                <div class="card-service">
+                    <h1>Video & <br> Motion graphic</h1>
+                    <hr>
+                    <p>aaa Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero inventore
+                        tenetur
+                        et, consectetur at deleniti facilis deserunt odio nemo dolore, </p>
+                    <a class="tombol-card small" href="">
+                        Read more
+                        <img src="asset/icon/panah-kecil.svg" alt="">
+                    </a>
                 </div>
             </div>
 
@@ -353,17 +412,17 @@
     <!-- EndServices -->
 
 
-    <hr class="pisah">
 
 
     <!-- Tools -->
-    <div class="tools" id="tools">
+    <section class="tools" id="tools">
         <div class="container">
+
             <div class="tittle">
-                <h4>Skill &
+                <h4>My Skills & Resources
                     <hr>
                 </h4>
-                <h4>Resources</h4>
+
             </div>
             <div class="konten">
                 <div class="card">
@@ -486,6 +545,14 @@
                         <p class="xtra-small">Rate 5/5</p>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="logo-app"> <img src="asset/img/PS.svg" alt=""> </div>
+                    <div class="txt-app">
+                        <hr>
+                        <p>Photoshop</p>
+                        <p class="xtra-small">Rate 5/5</p>
+                    </div>
+                </div>
 
             </div>
 
@@ -499,7 +566,7 @@
                 </button>
             </div>
         </div>
-    </div>
+    </section>
     <!-- End Tools -->
 
 
@@ -508,7 +575,7 @@
 
 
     <!-- Portfolio -->
-    <div class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="tittle">
                 <h4>My Portfolio</h4>
@@ -542,7 +609,7 @@
             </div>
         </div>
 
-    </div>
+    </section>
 
     <!-- End Portfolio -->
 
@@ -551,7 +618,7 @@
 
     <!-- Message -->
 
-    <section class="message">
+    <section class="message" id="message">
         <div class="container">
             <div class="tittle">
                 <h4>Contact Me</h4>
@@ -606,10 +673,21 @@
 
     <!-- script -->
     <script src="cursor.js"></script>
+    <script src="scroll.js"></script>
+
     <script src="myscript.js"></script>
     <!-- Vendor Script -->
     <script src="jquery-3.7.0.min.js"></script>
     <script src="parallax.js"></script>
+
+
+    <!-- 3d -->
+    <script type="importmap">
+        {"imports": {"@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.366/build/runtime.js"
+            }
+          }
+        </script>
+    <script type="module" src="asset/3d/main.js"></script>
 
 </body>
 

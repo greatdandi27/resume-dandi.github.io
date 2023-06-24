@@ -35,9 +35,9 @@ tutup.addEventListener("click", function () {
 
 
 
-/* Abou Me */
+/* About Me */
 var acc = document.getElementsByClassName("heading-text");
-/* var i; */
+var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
@@ -48,7 +48,13 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
-}
+
+  var panel = acc[i].nextElementSibling;
+  panel.style.maxHeight = panel.scrollHeight + "px";
+};
 
 
 /* End Abou Me */
+
+
+

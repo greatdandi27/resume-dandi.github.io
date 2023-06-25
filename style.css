@@ -309,7 +309,7 @@ nav .logo-nav .bintang {
 
 .hero1 {
     top: 0px;
-    /*     background-color: red; */
+    /* background-color: red; */
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -560,7 +560,6 @@ nav .logo-nav .bintang {
     grid-template-columns: 20% auto;
     grid-column-gap: 14%;
     grid-row-gap: 40px;
-
 }
 
 .service .konten {
@@ -594,18 +593,17 @@ nav .logo-nav .bintang {
 }
 
 
-
-
 .service .tittle {
     color: var(--putih);
 }
 
-.service h4 {
+.service .tittle span {
+    flex-grow: 1;
     display: flex;
+
 }
 
-
-.service h4 hr {
+.service .tittle hr {
     height: 4px;
     margin-left: 20px;
     flex-grow: 0.5;
@@ -619,6 +617,14 @@ nav .logo-nav .bintang {
     width: calc(50% - 16px);
     margin: 16px 0;
 }
+
+.card-service hr {
+    flex-grow: 1;
+    height: 2px;
+    background-color: var(--grey6);
+    margin-top: 18px;
+}
+
 
 .card-service p {
     margin: 18px auto;
@@ -652,51 +658,63 @@ nav .logo-nav .bintang {
     justify-content: center;
     margin-left: 80px auto;
     color: var(--putih);
-
 }
 
 
 
 .tools .container {
     max-width: 1200px;
+    width: 1200px;
     display: grid;
     grid-auto-flow: row;
+    /*     background-color: red; */
 }
 
-.tools .konten {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    margin: 80px auto;
-}
+
 
 .tools .tittle {
     color: var(--putih);
-
+    /* width: 1200px; */
 }
 
-.tools h4 {
+
+.tools .tittle h4 {
     display: flex;
+    width: 100%;
 }
 
-.tools h4 hr {
+.tools .tittle span {
+    flex-grow: 1;
+    display: flex;
+    margin-left: 16px;
+}
 
+.tools .tittle hr {
     height: 4px;
     margin-left: 20px;
     flex-grow: 1;
     background-color: var(--putih);
 }
 
-.tools .konten .card {
-    margin: 12px;
+.tools .konten {
+    max-width: 1200px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.tools .card {
+    margin: 8px;
     background-color: var(--grey6);
     border-radius: 6px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 8px 12px;
+    padding: 16px 12px;
     padding-top: 24px;
-    width: 160px;
+    width: 155px;
     height: 180px;
 }
 

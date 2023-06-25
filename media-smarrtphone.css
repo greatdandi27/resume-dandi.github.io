@@ -11,13 +11,13 @@
 }
 
 @media only screen and (max-width: 767px) {
-    /*     html {
+    html {
         font-size: 16px;
-    } */
+    }
 
     p {
         font-family: 'Helvetica Now Display';
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 21px;
         letter-spacing: 0.16px;
         margin: 0px;
@@ -26,9 +26,8 @@
 
 
     h1 {
-
         font-family: 'Helvetica Now Display';
-        font-size: 19px;
+        font-size: 1.333rem;
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0.285px;
@@ -40,7 +39,7 @@
 
     h2 {
         font-family: 'Helvetica Now Display';
-        font-size: 25px;
+        font-size: 1.777rem;
         line-height: 26px;
         margin: 0px;
     }
@@ -48,7 +47,7 @@
     h3 {
 
         font-family: 'Helvetica Now Display';
-        font-size: 31px;
+        font-size: 2.369rem;
         font-weight: 700;
         line-height: 30px;
         letter-spacing: -0.62px;
@@ -58,16 +57,16 @@
 
     h4 {
         font-family: 'Helvetica Now Display';
-        font-size: 33px;
+        font-size: 3.157rem;
         font-weight: 700;
-        line-height: 36px;
+        line-height: 42px;
         letter-spacing: 0.122px;
         margin: 0px;
     }
 
     h5 {
         font-family: 'Helvetica Now Display';
-        font-size: 3rem;
+        font-size: 4.209rem;
         font-weight: 700;
         line-height: 60px;
         letter-spacing: 0em;
@@ -106,11 +105,6 @@
         position: 0px
     }
 
-
-    .container {
-        width: 90vw;
-
-    }
 
 
     section {
@@ -192,10 +186,14 @@
 
     /* About */
 
+    .about {
+        padding: 0px;
+    }
 
     .about .container {
         grid-template-columns: 100%;
         max-width: 90vw;
+        margin: 60px auto;
     }
 
     .about .tittle h4 {
@@ -227,29 +225,51 @@
 
     /* End About */
 
-    section {
-        background-color: var(--hitam);
-        cursor: pointer;
-        color: var(--putih);
-        margin: 4vh 1vw;
-    }
-
 
 
 
 
     /* Service */
+
+    .service {
+        padding: 0px;
+    }
+
     .service .container {
         grid-template-columns: 100%;
+        max-width: 90vw;
+        margin: 60px auto;
     }
 
     .service .konten {
         grid-template-columns: 100%;
     }
 
-    .card-service {
+    .service .tittle h4 {
+        display: flex;
         width: 100%;
     }
+
+    .service .tittle span {
+        display: flex;
+        margin-left: 8px;
+    }
+
+    .service .tittle hr {
+        height: 2px;
+        flex-grow: 0.80;
+        margin-left: 12px;
+
+    }
+
+    .card-service {
+        width: 100%;
+        padding: 26px 22px;
+    }
+
+
+
+
 
     /* End Service */
 
@@ -257,7 +277,13 @@
 
 
     /* Tools */
+
+    .tools {
+        padding: 0px;
+    }
+
     .tools .container {
+        width: 95vw;
         grid-template-columns: 100%;
     }
 
@@ -266,9 +292,41 @@
         row-gap: 1vh;
     }
 
-    .tools .card {
-        height: 135px;
+
+    .tools .tittle h4 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
+
+    .tools .tittle span {
+        display: flex;
+        margin-left: 0px;
+    }
+
+    .tools .tittle hr {
+        height: 2px;
+        flex-grow: 0.80;
+        margin-left: 12px;
+    }
+
+    .tools .kontent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* row-gap: 0px; */
+
+    }
+
+    .tools .card {
+        margin: auto;
+        height: 155px;
+        max-width: 100%;
+    }
+
+    .tools .card img {
+        height: 28px;
+    }
+
 
     /* End Tools */
 

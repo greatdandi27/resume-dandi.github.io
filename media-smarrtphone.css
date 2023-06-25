@@ -109,6 +109,7 @@
 
     .container {
         width: 90vw;
+
     }
 
 
@@ -150,6 +151,10 @@
 
 
     /* Hero */
+    .hero1 {
+        height: 100vh;
+    }
+
     .hero1 .container {
         width: 95vw;
         justify-content: end;
@@ -207,9 +212,16 @@
         height: 2px;
         flex-grow: 0.80;
         margin-left: 12px;
-
     }
 
+    .hero1 .foto .gradasi-foto {
+        height: 200px;
+    }
+
+    .hero1 .foto img {
+        margin-left: 5vw;
+        height: 80vh;
+    }
 
 
 

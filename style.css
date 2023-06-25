@@ -12,11 +12,6 @@
 
 }
 
-/* html {
-    scroll-snap-type: y mandatory;
-
-} */
-
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -26,7 +21,7 @@
 
 section {
     scroll-snap-align: start;
-    transition: 2s ease;
+    transition: 1s ease;
 }
 
 ::-webkit-scrollbar {
@@ -323,7 +318,7 @@ nav .logo-nav .bintang {
 
 
 .hero1 .container {
-    z-index: 1;
+    z-index: 5;
     position: relative;
     color: var(--putih);
     margin: 15vh auto;
@@ -355,7 +350,6 @@ nav .logo-nav .bintang {
 
 
 .hero1 .foto {
-    z-index: -1;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -365,16 +359,25 @@ nav .logo-nav .bintang {
     margin: 0 auto;
 }
 
+.hero1 .foto .gradasi-foto {
+    position: absolute;
+    height: 100px;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0.00) 0%, #030303 67.17%);
+}
+
 .hero1 .foto img {
     margin-left: 30vw;
     height: 90vh;
 }
 
 .bg-hero1 .blur1 {
+    z-index: -1;
     position: absolute;
     top: 5%;
     left: -20%;
     background-color: #ffffff33;
+
     border-radius: 50%;
     width: 75vh;
     height: 75vh;
@@ -382,6 +385,7 @@ nav .logo-nav .bintang {
 }
 
 .bg-hero1 .blur2 {
+    z-index: -1;
     position: absolute;
     top: -35%;
     right: -25%;

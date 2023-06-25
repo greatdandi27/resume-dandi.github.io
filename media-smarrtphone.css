@@ -220,7 +220,7 @@
 
     .hero1 .foto img {
         margin-left: 5vw;
-        height: 80vh;
+        height: 100vh;
     }
 
 
@@ -234,6 +234,10 @@
         margin: 4vh 1vw;
     }
 
+
+
+
+
     /* Service */
     .service .container {
         grid-template-columns: 100%;
@@ -243,7 +247,13 @@
         grid-template-columns: 100%;
     }
 
+    .card-service {
+        width: 100%;
+    }
+
     /* End Service */
+
+
 
 
     /* Tools */

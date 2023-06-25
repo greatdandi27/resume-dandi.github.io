@@ -256,12 +256,12 @@ body {
 /* my-Nav */
 .navbar {
     position: fixed;
+    top: -8px;
     z-index: 9;
     width: 100%;
     margin: 0 auto;
     background-color: #0c0c0c63;
     backdrop-filter: blur(10px);
-    margin: -28px auto;
 }
 
 .mynav {
@@ -308,6 +308,8 @@ nav .logo-nav .bintang {
 
 
 .hero1 {
+    top: 0px;
+    /*     background-color: red; */
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -360,15 +362,17 @@ nav .logo-nav .bintang {
 }
 
 .hero1 .foto .gradasi-foto {
+    bottom: -20px;
     position: absolute;
-    height: 100px;
+    height: 150px;
     width: 100vw;
-    background: linear-gradient(180deg, rgba(3, 3, 3, 0.00) 0%, #030303 67.17%);
+    /*     background: linear-gradient(180deg, rgba(3, 3, 3, 0.00) 0%, #030303 67.17%); */
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0.00) 0%, #030303 85.37%, rgba(3, 3, 3, 0.00) 100%);
 }
 
 .hero1 .foto img {
     margin-left: 30vw;
-    height: 90vh;
+    height: 95vh;
 }
 
 .bg-hero1 .blur1 {

@@ -1,24 +1,25 @@
 :root {
-    --putih: #D6D5DB;
-    --hitam: #050406;
-    --hitam75: #444344;
-    --hitam50: #828183;
-    --hitam25: #C1C0C1;
-    --bg: #CDCDCD;
+    --beg: #030303;
+    --putih: #fff;
+    --grey1: #FFFFFFBF;
+    --grey2: #8080809F;
+    --grey3: rgba(128, 128, 128, 0.5);
+    --grey5: rgba(128, 128, 128, 0.25);
+    --grey6: rgba(128, 128, 128, 0.08);
+    --null: #fe000054;
+
 }
 
 @media only screen and (max-width: 767px) {
-    html {
+    /*     html {
         font-size: 16px;
-    }
+    } */
 
     p {
         font-family: 'Helvetica Now Display';
         font-size: 16px;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: 0.02em;
-
+        line-height: 21px;
+        letter-spacing: 0.16px;
         margin: 0px;
 
     }
@@ -27,10 +28,10 @@
     h1 {
 
         font-family: 'Helvetica Now Display';
-        font-size: 20px;
+        font-size: 19px;
         font-weight: 500;
-        line-height: 21px;
-        letter-spacing: -0.01em;
+        line-height: 24px;
+        letter-spacing: 0.285px;
 
 
         margin: 0px;
@@ -39,30 +40,28 @@
 
     h2 {
         font-family: 'Helvetica Now Display';
-        font-size: 1.56rem;
-        font-weight: 500;
+        font-size: 25px;
         line-height: 26px;
-        letter-spacing: -0.02em;
         margin: 0px;
     }
 
     h3 {
 
         font-family: 'Helvetica Now Display';
-        font-size: 1.9rem;
+        font-size: 31px;
         font-weight: 700;
         line-height: 30px;
-        letter-spacing: -0.02em;
+        letter-spacing: -0.62px;
         margin: 0px;
     }
 
 
     h4 {
         font-family: 'Helvetica Now Display';
-        font-size: 2.4rem;
-        font-weight: 500;
-        line-height: 30px;
-        letter-spacing: -0.02em;
+        font-size: 33px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.122px;
         margin: 0px;
     }
 
@@ -90,44 +89,97 @@
 
     p small {
         font-family: 'Helvetica Now Display';
-        font-size: 0.9 rem;
-        font-weight: 800;
-        line-height: 10px;
-        letter-spacing: 0em;
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: -1.62px;
         margin: 0px;
+    }
+
+
+    /* general */
+
+    body {
+        background-color: var(--beg);
+        margin: 0 auto;
+        overflow-x: hidden;
+        position: 0px
+    }
+
+
+    .container {
+        width: 90vw;
+    }
+
+
+    section {
+        overflow-x: hidden;
+    }
+
+    /* End general */
+
+
+
+    .menu-halaman {
+        display: none;
+    }
+
+    .menu-kiri {
+        display: none;
+    }
+
+    .menu-about a {
+        display: none;
     }
 
     /* Nav */
     nav .my-logo {
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -0.4px;
+    }
+
+    .logo-nav img {
+        width: 26px;
     }
 
     /* End Nav */
 
+
+
+
     /* Hero */
     .hero1 .container {
-        background-position: center bottom;
-        background-size: 90vh;
-        padding-left: 6vw;
+        width: 95vw;
+        justify-content: end;
+        margin: 10vh auto;
     }
-
 
     .hero1 .content {
-        justify-content: space-between;
         height: 100vh;
+    }
+
+    .hero1 .foto img {
+        margin-left: 0vw;
+        height: 90vh;
+    }
+
+    .cta-hero {
+        position: relative;
+        bottom: auto;
 
     }
 
-    /* Hero */
-    .hero1 h3 {
-        font-family: 'Helvetica Now Display';
-        font-size: 31px;
-        font-weight: 300;
-        line-height: 38px;
-        letter-spacing: -0.02em;
-
+    .hero1 .subheading {
+        color: var(--grey1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px auto;
     }
+
+
 
 
     /* End Hero */
@@ -135,9 +187,31 @@
 
     /* About */
 
+
     .about .container {
         grid-template-columns: 100%;
+        max-width: 90vw;
     }
+
+    .about .tittle h4 {
+        display: flex;
+        width: 100%;
+    }
+
+    .about .tittle span {
+        display: flex;
+        margin-left: 8px;
+    }
+
+    .about .tittle hr {
+        height: 2px;
+        flex-grow: 0.80;
+        margin-left: 12px;
+
+    }
+
+
+
 
     /* End About */
 

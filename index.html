@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="cursor.css">
-    <link rel="stylesheet" href="tombol-menu.css">
     <link rel="stylesheet" href="media-smarrtphone.css">
 
     <!-- cdn React Js -->
@@ -28,29 +27,11 @@
     <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">.
 
 
-    <!-- <script src="canvas3d.js"></script> -->
+
+
 </head>
 
 <body>
-
-    <!-- <main class="tombol" id="hamburger" data-aos="zoom-in" data-aos-duration="1500">
-        <div class="tombol-menu">
-            <div class="vector-txt">
-                <img class="txt" src="asset/icon/melingkar.svg" alt="">
-            </div>
-            <div class="vector">
-                <div class="vector-a"></div>
-                <div class="vector-a"></div>
-                <div class="vector-a"></div>
-            </div>
-        </div>
-
-    </main> -->
-
-
-
-
-
 
 
     <!-- Menu Halaman -->
@@ -128,7 +109,7 @@
 
 
     <!-- Nav Bar -->
-    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
+    <nav class="navbar">
         <div class="mynav">
             <div class="logo-nav">
                 <img class="bintang" src="asset/icon/Bintang Tebal.svg" alt="">
@@ -193,24 +174,23 @@
     <!-- myHero -->
     <section class="hero1" id="hero1">
         <div class="container">
-            <div class="content">
-                <div class="heading">
-                    <div class="subheading">
-                        <h3>Hallo, I’m</h3>
-                        <hr>
-                    </div>
-                    <h6> Dandi Irawan <br> Pamungkas.
-                    </h6>
+            <div class="heading">
+                <div class="subheading">
+                    <h3>Hallo, I’m</h3>
+                    <hr>
                 </div>
-                <a class="cta-hero" href="#about">
-                    Scroll Down
-                    <div class="panah">
-                        <img src="asset/icon/icon-scroll.svg" alt="">
-                    </div>
-                </a>
+                <h6> Dandi Irawan <br> Pamungkas.
+                </h6>
             </div>
+            <a class="cta-hero" href="#about">
+                Scroll Down
+                <div class="panah">
+                    <img src="asset/icon/icon-scroll.svg" alt="">
+                </div>
+            </a>
+
         </div>
-        <div class="foto"><img src="asset/img/Foto 2.png" alt=""></div>
+        <div class="foto" id="foto"><img src="asset/img/Foto 2.png" alt=""></div>
         <div class="bg-hero1">
             <div class="blur1"></div>
             <div class="blur2"></div>
@@ -231,10 +211,8 @@
         </div>
         <div class="container">
             <div class="tittle">
-                <h4>About</h4>
-                <h4>me
-                    <hr>
-                </h4>
+                <h4>About <span>me
+                        <hr></span></h4>
             </div>
 
             <div class="konten">
@@ -537,22 +515,7 @@
                         <p class="xtra-small">Rate 5/5</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="logo-app"> <img src="asset/img/PS.svg" alt=""> </div>
-                    <div class="txt-app">
-                        <hr>
-                        <p>Photoshop</p>
-                        <p class="xtra-small">Rate 5/5</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="logo-app"> <img src="asset/img/PS.svg" alt=""> </div>
-                    <div class="txt-app">
-                        <hr>
-                        <p>Photoshop</p>
-                        <p class="xtra-small">Rate 5/5</p>
-                    </div>
-                </div>
+
 
             </div>
 
@@ -570,12 +533,11 @@
     <!-- End Tools -->
 
 
-    <hr class="pisah">
 
 
 
     <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
+    <!--  <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="tittle">
                 <h4>My Portfolio</h4>
@@ -609,7 +571,7 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
     <!-- End Portfolio -->
 
@@ -618,7 +580,7 @@
 
     <!-- Message -->
 
-    <section class="message" id="message">
+    <!--     <section class="message" id="message">
         <div class="container">
             <div class="tittle">
                 <h4>Contact Me</h4>
@@ -651,7 +613,7 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
     <!-- End Message -->
 
 
@@ -681,13 +643,7 @@
     <script src="parallax.js"></script>
 
 
-    <!-- 3d -->
-    <script type="importmap">
-        {"imports": {"@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.366/build/runtime.js"
-            }
-          }
-        </script>
-    <script type="module" src="asset/3d/main.js"></script>
+
 
 </body>
 

@@ -1,12 +1,4 @@
 :root {
-    --putih2: #D9D9D905;
-    --putih5: #D9D9D90D;
-    --putih15: #D9D9D926;
-    --putih50: #D9D9D980;
-    --putih75: #D9D9D9BF;
-    --hitam: #070707;
-    --gray2: #636366;
-    --gray1: #8E8E93;
 
     --beg: #030303;
     --putih: #fff;
@@ -15,6 +7,9 @@
     --grey3: rgba(128, 128, 128, 0.5);
     --grey5: rgba(128, 128, 128, 0.25);
     --grey6: rgba(128, 128, 128, 0.08);
+    --null: #fe000054;
+
+
 }
 
 /* html {
@@ -118,8 +113,7 @@ hr {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 100px;
+    position: relative;
 }
 
 .cta-hero .panah {
@@ -166,6 +160,7 @@ hr {
 
 
 /* END GENERAL */
+
 
 body {
     background-color: var(--beg);
@@ -284,8 +279,6 @@ body {
 }
 
 .logo-nav {
-
-    /* height: fit-content; */
     gap: 8px;
     display: flex;
     align-items: center;
@@ -321,59 +314,35 @@ nav .logo-nav .bintang {
 
 .hero1 {
     width: 100vw;
-    margin: 0 auto;
-    height: calc(100vh + 18px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 0.25s ease-out;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: end;
+
 }
 
 
 .hero1 .container {
-    color: red;
-    margin: 0 auto;
-    max-width: 1300px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.hero1 .container h6 {
+    z-index: 1;
+    position: relative;
     color: var(--putih);
+    margin: 15vh auto;
+    width: 1200px;
 
-}
-
-.foto {
-    height: 95vh;
-    right: 5%;
-    bottom: -6%;
-    position: absolute;
-    display: flex;
-    transition: 0.3s ease-out;
-}
-
-/* .foto {
-    bottom: 150px;
-} */
-
-.hero1 .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.hero1 .heading {
-    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: start;
+    height: 50%;
 
 }
+
 
 .hero1 .subheading {
     color: var(--putih);
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     margin: 16px auto;
 }
 
@@ -382,6 +351,23 @@ nav .logo-nav .bintang {
     height: 2px;
     margin-left: 20px;
     flex-grow: 1;
+}
+
+
+.hero1 .foto {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 0 auto;
+}
+
+.hero1 .foto img {
+    margin-left: 30vw;
+    height: 90vh;
 }
 
 .bg-hero1 .blur1 {
@@ -452,6 +438,7 @@ nav .logo-nav .bintang {
     grid-column-gap: 14%;
     grid-row-gap: 40px;
 
+
 }
 
 .about .konten {
@@ -464,12 +451,12 @@ nav .logo-nav .bintang {
     top: 80px;
 }
 
-.about h4 {
+.about .tittle span {
+    flex-grow: 1;
     display: flex;
 }
 
-.about h4 hr {
-
+.about .tittle hr {
     height: 4px;
     margin-left: 20px;
     flex-grow: 0.5;
@@ -670,7 +657,6 @@ nav .logo-nav .bintang {
 
 .tools .konten {
     display: flex;
-    row-gap: 20px;
     flex-wrap: wrap;
     justify-content: start;
     margin: 80px auto;
@@ -694,7 +680,7 @@ nav .logo-nav .bintang {
 }
 
 .tools .konten .card {
-    margin: auto;
+    margin: 12px;
     background-color: var(--grey6);
     border-radius: 6px;
     display: flex;
@@ -878,7 +864,6 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*     border: 1px solid red; */
 
 }
 

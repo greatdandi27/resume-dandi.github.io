@@ -4,7 +4,7 @@
 const sections = document.querySelectorAll('section');
 const windowHeight = window.innerHeight;
 const navigasi = document.querySelector('.navigasi');
-console.log(windowHeight);
+/* console.log(windowHeight); */
 
 function reset(){
     for (var i = 0; i < navigasi.children.length; i++){
@@ -55,10 +55,3 @@ window.addEventListener('scroll', function() {
 
 
 /* hero */
-
-let foto = document.getElementById('foto');
-
-window.addEventListener('scroll', function (){
-  let value = window.scrollY;
-  foto.style.bottom = value * 1.25 + 'px';
-});

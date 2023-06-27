@@ -39,18 +39,20 @@ window.addEventListener('scroll', function() {
   const scrollPosition = window.scrollY;
   
 
+  
   const sectionProgress = (scrollPosition - sectionTop) / (sectionHeight - viewportHeight);
   
   const thresholdAppear = -0.15;  
-  const thresholdDisappear = 1.5; 
+  const thresholdDisappear = 1.8; 
 
   if (sectionProgress >= thresholdAppear && sectionProgress < thresholdDisappear) {
-    menuabout.style.opacity = 1;
+    menuabout.style.display = 'flex';
   } else {
 
-    menuabout.style.opacity = 0;
+    menuabout.style.display = 'none';
   }
 });
+
 
 
 

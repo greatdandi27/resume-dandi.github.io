@@ -2,11 +2,11 @@
 
     --beg: #030303;
     --putih: #fff;
-    --grey1: #FFFFFFBF;
+    --grey1: #FFFFFFB2;
     --grey2: #8080809F;
     --grey3: rgba(128, 128, 128, 0.5);
     --grey5: rgba(128, 128, 128, 0.25);
-    --grey6: rgba(128, 128, 128, 0.08);
+    --grey6: #80808026;
     --null: #fe000054;
 
 
@@ -305,11 +305,8 @@ nav .logo-nav .bintang {
 
 /* MyHero */
 
-
-
 .hero1 {
     top: 0px;
-    /* background-color: red; */
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -366,7 +363,7 @@ nav .logo-nav .bintang {
     position: absolute;
     height: 150px;
     width: 100vw;
-    /*     background: linear-gradient(180deg, rgba(3, 3, 3, 0.00) 0%, #030303 67.17%); */
+
     background: linear-gradient(180deg, rgba(3, 3, 3, 0.00) 0%, #030303 85.37%, rgba(3, 3, 3, 0.00) 100%);
 }
 
@@ -412,9 +409,8 @@ nav .logo-nav .bintang {
     transition: 0.5s ease;
     color: var(--putih);
     margin-left: 2vw;
-    display: flex;
+    display: none;
     flex-direction: column;
-
     position: fixed;
     top: 25vh;
     font-family: 'Helvetica Now Display';
@@ -422,6 +418,8 @@ nav .logo-nav .bintang {
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0.01em;
+
+
 
 }
 
@@ -553,7 +551,6 @@ nav .logo-nav .bintang {
 
 
 .service .container {
-    z-index: 9;
     margin: 0 auto;
     max-width: 1200px;
     display: grid;
@@ -635,7 +632,7 @@ nav .logo-nav .bintang {
     color: var(--putih);
 }
 
-.service .cta p {
+.service .tombol-card {
     color: var(--grey1);
 }
 
@@ -876,7 +873,7 @@ textarea::placeholder {
 
 .menu-halaman {
     width: fit-content;
-    z-index: 8;
+    z-index: 999;
     position: fixed;
     right: 0%;
     bottom: 50%;

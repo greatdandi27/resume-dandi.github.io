@@ -57,4 +57,4 @@ for (i = 0; i < acc.length; i++) {
 /* End Abou Me */
 
 
-
+/* Abooutme indicator */
